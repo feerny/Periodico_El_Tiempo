@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{margin: 0; padding: 0;  list-style: none; text-decoration: none;}
+
+body{ font-family: 'Playfair Display', serif; }
+
+.titleElEspectador{ 
+    width:100%; top:-1rem; height: 70px;  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.694);
+    background-color: #fff; position: fixed; margin-top: 15px;  
+    display: flex; justify-content: space-between;  align-items: center; }
+    
+.titleImage{width: 200px; height: 50px; cursor: pointer; right: 3rem;}
+    
+
+.BtnAndSvg{display: flex;justify-content: center; gap: 20px; position: absolute; right: 6rem; top: 0.8rem; }
+
+
+.titleElEspectador button { border: none; width: 120px; margin: 0 15px 0 15px; padding: 10px;  color: #fff;background-color: #ffb800; box-shadow: 0 0 6px rgb(255 184 0 / 55%); border-radius: 2px;}
+.titleElEspectador button:hover{background-color: #ffb700b0; box-shadow: 0 0 6px rgb(255 184 0 / 55%);}
+.Header-seeker{width: 40px; cursor: pointer; position: absolute; left: 6rem;top: 24px;}
+.Header-Bell{width: 24px; cursor: pointer;}
+.Header-Anon{width: 30px; cursor: pointer;}
+
+nav{padding: 15px; display: flex; gap: 15px;  align-items: center; justify-content: center; font-size: 15px;}
+ul li a{padding-left: 15px; color: #000;}
+ul li a:hover{font-weight: 700;text-decoration: underline;}
+
+nav p{color: rgba(94, 94, 94, 0.768); }
+.cointanerNav { border-left: 1px  solid red ;}
+.content-primary{padding: 5rem 3rem 0; }
+
+
+.Publicidad{ padding: 1.5rem 3rem;}
+.Advertising{ width: 100%; height: 15rem; background-image: url("../images/publicidadd.jpg"); background-repeat: none; background-size: cover; background-position: center; }
+
+
+/*===================*/
+.FeaturedSeccion{ padding: 1.5rem 5.2rem; background-color: rgb(249, 249, 249);}
+.newsOne{display: flex; gap: 10px;}
+
+
+
+.featuredsOne{width: 200px; height: 200vh; padding: 10px; display: flex; justify-content: center; flex-direction: column;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.552); width: 200px;}
+.featuredsOne img{width: 150px; margin-top: 5px;  }
+
+
+.featuredTwo{ box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.552);width: 600px;}
+.featuredTwoContent h2{font-size: 35px; margin-top: 5px; padding: 0 10px 0 10px;}
+
+.ContentInterests{padding: 7px; border-left:1px solid rgba(0, 0, 0, 0.224);}
+
+
+
+

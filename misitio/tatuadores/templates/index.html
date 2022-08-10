@@ -1,0 +1,130 @@
+{% extends 'Layout.html' %}
+{%  load static  %}
+
+
+
+{% block content %}
+    <div class="Publicidad" >
+        <div class="Advertising" style="display: flex; align-items: flex-end;">
+            <p style="margin-left: 2rem;">ultima hora</p>
+        </div>
+    </div>
+
+    <div class="FeaturedSeccion"> 
+        <div class="newsOne">
+        <div class="featuredTwo" style="width: 100%; height: 260vh; padding-bottom: 15px;" >
+            <div class="featuredTwoContent">
+                <h2 style="font-size: 35px; margin-top: 5px; padding: 10px 50px;">
+                {% for Notice in Notice %}
+                    {{ Notice }}
+                {% endfor %}
+                </h2>
+                <p style="font-size: 20px; margin-top: 5px; text-align: justify; padding: 10px 50px ;" >
+                    {% for Notice in Notice %}
+                        {{ Notice.content_Notice }}
+                    {% endfor %}
+                </p>
+                <img style="width: 90%; margin-top: 30px; padding-left: 3rem;" src="{% static 'images/dario.webp' %}" alt="">
+            </div>
+            <div style="width: auto; display: flex; gap: 10px; padding: 10px 0;">
+                <div style="padding:20px;" > 
+                    <img style="width: 100%;" src="{% static 'images/destacados2.jpg' %}" alt="">
+                    <h3 style="color: red;" >Musica</h3>
+                    <p>Driftwood, la música más allá de los sonidos</p>
+                    <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 45 Minutos</p>
+                </div>
+                <div style="padding:20px;" >
+                    <img style="width: 100%;" src="{% static 'images/destacados3.jpg' %}" alt="">
+                    <h3 style="color: red;" >Musica</h3>
+                    <p>Driftwood, la música más allá de los sonidos</p>
+                    <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 2 Hora</p>
+                </div>
+                <div style="padding:20px;" >
+                    <img style="width: 100%;" src="{% static 'images/destacados4.webp' %}" alt="">
+                    <h3 style="color: red;" >Musica</h3>
+                    <p>Driftwood, la música más allá de los sonidos</p>
+                    <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 3 Hora</p>
+                </div>
+                <div style="padding:20px;" >
+                    <img style="width: 100%;" src="{% static 'images/destacadosOne.jpg' %}" alt="">
+                    <h3 style="color: red;" >Musica</h3>
+                    <p>Driftwood, la música más allá de los sonidos</p>
+                    <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 3 Hora</p>
+                </div>
+                
+            </div>
+
+            <div>
+                <div style="margin-left: 15px;  padding-top: .5rem; display:flex; gap: 25px; margin-top: 1rem; border-top: 1px solid rgba(87, 87, 87, 0.415); ">
+                    <img  style="width: 150px;" src="{% static 'images/deportes.jpg' %}" alt="">
+                    <div style="display:flex; justify-content:center; align-content:center; flex-direction: column;">
+                        <h3 style="color: red; font-size: 13px; margin-bottom: 5px;" >Lorem ipsum dolor sit amet.</h3>
+                        <p style="font-size: 16px; padding-right: 6rem; font-family: Arial, Helvetica, sans-serif; " >Lorem ipsum dolor sit amet consectetur adipisicing elit. similique?</p>
+                        <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 3 Hora</p>
+                    </div>
+                </div>
+                <div style="margin-left: 15px;  padding-top: .5rem; display:flex; gap: 25px; margin-top: 1rem; border-top: 1px solid rgba(87, 87, 87, 0.415); ">
+                    <img  style="width: 150px;" src="{% static 'images/deportes1.jpg' %}" alt="">
+                    <div style="display:flex; justify-content:center; align-content:center; flex-direction: column;">
+                        <h3 style="color: red; font-size: 13px; margin-bottom: 5px;" >Lorem ipsum dolor sit amet.</h3>
+                        <p style="font-size: 16px; padding-right: 6rem; font-family: Arial, Helvetica, sans-serif; " >Lorem ipsum dolor sit amet consectetur adipisicing elit. similique?</p>
+                        <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 3 Hora</p>
+                    </div>
+                </div>
+                <div style="margin-left: 15px;  padding-top: .5rem; display:flex; gap: 25px; margin-top: 1rem; border-top: 1px solid rgba(87, 87, 87, 0.415); ">
+                    <img  style="width: 150px;" src="{% static 'images/deportes2.jpg' %}" alt="">
+                    <div style="display:flex; justify-content:center; align-content:center; flex-direction: column;">
+                        <h3 style="color: red; font-size: 13px; margin-bottom: 5px;" >Lorem ipsum dolor sit amet.</h3>
+                        <p style="font-size: 16px; padding-right: 6rem; font-family: Arial, Helvetica, sans-serif; " >Lorem ipsum dolor sit amet consectetur adipisicing elit. similique?</p>
+                        <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 3 Hora</p>
+                    </div>
+                </div>
+                <div style="margin-left: 15px;  padding-top: .5rem; display:flex; gap: 25px; margin-top: 1rem; border-top: 1px solid rgba(87, 87, 87, 0.415); ">
+                    <img  style="width: 150px;" src="{% static 'images/deportes3.jpg' %}" alt="">
+                    <div style="display:flex; justify-content:center; align-content:center; flex-direction: column;">
+                        <h3 style="color: red; font-size: 13px; margin-bottom: 5px;" >Lorem ipsum dolor sit amet.</h3>
+                        <p style="font-size: 16px; padding-right: 6rem; font-family: Arial, Helvetica, sans-serif; " >Lorem ipsum dolor sit amet consectetur adipisicing elit. similique?</p>
+                        <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 3 Hora</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===========  S E C T I O N   DOS   =========== -->
+        <div class="featuredsOne">                    
+            <div>
+                <h2 style="font-weight: 800; font-size: 20px;">Destacados</h2>
+                <hr>
+                <img src="{% static 'images/destacadosOne.jpg' %}" alt="">
+                <h3 style="color: red;" >Lorem ipsum dolor. Error quae.</h3>
+                <p>Fiscalía llamará a juicio al coronel (r) González del Río y otros militares</p>
+                <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 1 Hora</p>
+            </div>
+            <div>
+                <hr style="margin: 10px 0 10px;" >
+                <img src="{% static 'images/destacados2.jpg' %}" alt="">
+                <h3 style="color: red;" >Lorem ipsum dolor. Error, quae.</h3>
+                <p>Soacha: este fin de semana realizarán adecuaciones en la autopista Sur</p>
+                <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 1 Hora</p>
+            </div>
+            <div>
+                <hr style="margin: 10px 0 10px;" >
+                <img src="{% static 'images/destacados3.jpg' %}" alt="">
+                <h3 style="color: red;" >Lorem ipsum dolor. Error, quae.</h3>
+                <p>Protestas por el feminicidio de Luz Raquel, la mujer que fue quemada viva en México</p>
+                <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 1 Hora</p>
+            </div>
+            <div>
+                <hr style="margin: 10px 0 10px;" >
+                <img src="{% static 'images/destacados4.webp' %}" alt="">
+                <h3 style="color: red;" >Lorem ipsum dolor. Error, quae.</h3>
+                <p>Driftwood, la música más allá de los sonidos</p>
+                <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 1 Hora</p>
+            </div>
+        </div>
+    </div>
+    <div style="padding: 80px; display: flex; justify-content: center; align-items: center; gap: 20px; ">
+        <div><img style="width: 100%;" src="{% static 'images/home_opinion_1200.png' %}" alt=""></div>
+    </div>
+    
+</div>
+{% endblock %}

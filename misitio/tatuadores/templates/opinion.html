@@ -1,0 +1,53 @@
+{% extends 'Layout.html' %}
+{%  load static  %}
+
+
+{% block content %}
+<div style=" font-size: 35px; width: 100%; height: 100px; display: flex; justify-content: center; align-items: center;">
+    <h2>Opinión</h2>
+</div>
+
+
+<div style="padding: 100px; display: flex; justify-content: center; align-items: center; gap: 20px; ">
+    <div><img style="width: 600px;" src="{% static 'images/opinion.jpg' %}" alt=""></div>
+    <div style="display: flex; flex-direction: column; gap: 10px;"> 
+        <h5 style="color: red;">Editorial</h5>
+        <h2>Preferible el silencio que la cacofonía de anuncios</h2>
+        <p>Lanzar ideas al aire solo fomenta la incertidumbre que tiene a una porción de la población, y a los mercados, con temores...</p>
+        <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 1 Hora</p>
+    </div>
+</div>
+
+<div style=" box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.552); width: 100%; height: auto; padding-bottom: 30px; ;" >
+    <div style="padding: 100px" > 
+        <h2 style="font-size: 35px; margin-top: 5px; padding: 0 0 0 10px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, quibusdam.</h2>
+        <p style="font-size: 20px; margin-top: 5px; text-align: justify;" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam aut ipsum sunt incidunt perspiciatis suscipit magni excepturi blanditiis molestias placeat iusto, dignissimos error vitae commodi libero asperiores tenetur adipisci? Soluta.</p>
+        <img style="width: 100%; margin-top: 30px;" src="{% static 'images/pexels-markus-spiske-2990644.jpg' %}" alt="">
+    </div>
+    <div style="display:flex; justify-content: center; gap: 20px; ">
+        <div style="padding: 7px; width: 350px;"> 
+            <img style="width: 350px;" src="{% static 'images/pexels-markus-spiske-2990617.jpg' %}" alt="">
+            <h3 style="color: red;" >Lorem ipsum dolor sit.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus excepturi placeat, consectetur aliquam sint molestiae.</p>
+            <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 45 Minutos</p>
+        </div>
+        <div class="ContentInterests" style="width: 350px;">
+            <img style="width: 350px;" src="{% static 'images/pexels-lara-jameson-8898914.jpg' %}" alt="">
+            <h3 style="color: red;" >Lorem, ipsum dolor.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere cumque harum reprehenderit optio fugit odio?</p>
+            <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 2 Hora</p>
+        </div>
+        <div class="ContentInterests" style="width: 350px;">
+            <img style="width: 350px;" src="{% static 'images/pexels-brett-sayles-12523712.jpg' %}" alt="">
+            <h3 style="color: red;" >Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi error sunt similique laborum facere repudiandae blanditiis!</p>
+            <p style="margin-top: 5px; color: gray; font-family: Arial, Helvetica, sans-serif; font-size: 13px; ">Hace 3 Hora</p>
+        </div>
+    </div>
+    <div style="padding: 100px; display: flex; justify-content: center; align-items: center; gap: 20px; ">
+        <div><img style="width: 100%;" src="{% static 'images/home_opinion_1200.png' %}" alt=""></div>
+    </div>
+</div>
+
+
+{% endblock %}
