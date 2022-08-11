@@ -15,8 +15,8 @@ body{ font-family: 'Playfair Display', serif; }
 .BtnAndSvg{display: flex;justify-content: center; gap: 20px; position: absolute; right: 6rem; top: 0.8rem; }
 
 
-.titleElEspectador button { border: none; width: 120px; margin: 0 15px 0 15px; padding: 10px;  color: #fff;background-color: #ffb800; box-shadow: 0 0 6px rgb(255 184 0 / 55%); border-radius: 2px;}
-.titleElEspectador button:hover{background-color: #ffb700b0; box-shadow: 0 0 6px rgb(255 184 0 / 55%);}
+.titleElEspectador button { border: none; width: 120px; margin: 0 15px 0 15px; padding: 10px;  color: #fff;background-color: #f80000; box-shadow: 0 0 6px rgba(70, 3, 3, 0.55); border-radius: 2px;}
+.titleElEspectador button:hover{background-color: #6b0505b0; box-shadow: 0 0 6px rgba(240, 54, 54, 0.55);}
 .Header-seeker{width: 40px; cursor: pointer; position: absolute; left: 6rem;top: 24px;}
 .Header-Bell{width: 24px; cursor: pointer;}
 .Header-Anon{width: 30px; cursor: pointer;}
